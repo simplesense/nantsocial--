@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Nantsocial</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+	<head>
+	  <title>Nantsocial</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="navbar-inner">
+  			<div class="container">
+  				<a href="http://localhost:3000" class="navbar-brand">Nantsocial</a>
+  				<ul class="nav navbar-nav">
+  					<li>
+  						<%= link_to "Ramblings", statuses_path %>
+  					</li>
+  			</div>
+  		</div>
+	</div>
+	<body class="container">
+		<h1>Welcome to NantSocial</h1>
+		<%= yield %>
+		<em>footer</em>
+	</body>
 </html>
