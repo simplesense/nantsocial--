@@ -1,7 +1,6 @@
 <div class="page-header">
-<h1> All of the Ramblings</h1>
+<h1>All of the Ramblings<%= link_to "New Ramble", new_status_path, class: "btn btn-info pull-right" %></h1>
 </div>
-<%= link_to "New Ramble", new_status_path, class: "btn btn-info" %>
 
 <% @statuses.each do |status| %>
 <div class="status">
